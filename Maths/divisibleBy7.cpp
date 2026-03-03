@@ -84,3 +84,24 @@ int main() {
     std::cout << "Is " << number << " divisible by 7? " 
               << (isDivisibleBy7(number) ? "Yes" : "No") << std::endl;
 }
+
+/* There is another approach to check if a number is divisible by 7 or not, 
+which is repeatedly subtracting 7 from the number until we get a small number that is easy to check for divisibility by 7.
+If any point, the result of substraction becomes 0, then the original number is divisible by 7.
+If the number reduces to a value smaller than 7, and is not 0, then the original number is not divisible by 7.
+
+Below is the cpp program to implement this approach.
+
+bool isDivisibleBy7(const std::string& number) {
+    // Convert the string to a long long integer
+    long long num = std::stoll(number);
+
+    // Repeatedly subtract 7 from the number
+    while (num >= 7) {
+        num -= 7;
+    }
+
+    // Check if the final result is 0
+    return num == 0;
+}
+*/
