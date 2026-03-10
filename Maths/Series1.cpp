@@ -3,6 +3,12 @@
     sum = 2 + 22 + 222 = 246
 Here, we are writing the program for this pattern - 
     2+22+222+2222+............N terms
+
+Below is the very General formulla to compute series like - 
+3+33+333+3333+.................N terms
+7+77+777+7777+.................N terms.
+
+sum = (d/81) * (10 * (pow(10, N) - 1) - 9N)
 */
 
 #include <iostream>
