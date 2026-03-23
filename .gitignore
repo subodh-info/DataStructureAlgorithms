@@ -30,6 +30,7 @@
 *.exe
 *.out
 *.app
+*.bat
 
 # vscode generated file/folder
 .vscode
